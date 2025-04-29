@@ -165,3 +165,56 @@ Sessions will be protected with features like short expiration times, automatic 
 
 ### 9. **Activity Monitoring and Logging**  
 Key user actions (e.g., logins, property updates, payments) will be logged for auditing and troubleshooting. This allows you to detect suspicious behavior early and maintain a history of critical interactions.
+
+## CI/CD Pipeline
+### What Is CI/CD?
+
+**CI/CD** stands for **Continuous Integration** and **Continuous Delivery/Deployment**—a set of automated practices that streamline the process of integrating code changes, testing them, and deploying updates to production. 
+
+- **Continuous Integration (CI)**: Developers frequently merge code changes into a shared repository, where automated builds and tests are run to detect issues early. 
+
+- **Continuous Delivery (CD)**: Ensures that the application can be reliably released at any time. It involves automated testing and staging to prepare code for production deployment. 
+
+- **Continuous Deployment**: Extends CD by automatically deploying every change that passes the automated tests to production, without manual intervention.
+
+### Why CI/CD Matters for the Airbnb Clone Project
+
+Implementing CI/CD pipelines is crucial for the Airbnb Clone Project due to the following reasons:
+
+- **Rapid Development**: Automates the integration and testing of code changes, allowing for faster development cycles.
+
+- **Early Bug Detection**: Automated tests catch bugs early in the development process, reducing the cost and time of fixing them later.
+
+- **Consistent Deployments**: Ensures that deployments are consistent and repeatable, reducing the chances of human error.
+
+- **Improved Collaboration**: Facilitates better collaboration among team members by integrating changes frequently and providing immediate feedback.
+
+- **Scalability**: Supports the scalability of the application by enabling frequent and reliable updates.
+
+### Recommended Tools for CI/CD
+
+For the technology stack used in the Airbnb Clone Project (Django, PostgreSQL, Docker), the following tools are recommended:
+
+- **GitHub Actions**: Provides native integration with GitHub repositories, allowing for the automation of workflows such as testing and deployment.
+
+- **Docker**: Containerizes the application, ensuring consistency across development, testing, and production environments.
+
+- **Jenkins**: An open-source automation server that supports building, deploying, and automating any project.
+
+
+
+### Sample CI/CD Workflow
+
+A typical CI/CD pipeline for the Airbnb Clone Project might include the following steps:
+
+1. **Code Commit**: Developers push code changes to the repository.
+
+2. **Build**: The CI server builds the application using Docker.
+
+3. **Test**: Automated tests are run to ensure code quality and functionality.
+
+4. **Deploy to Staging**: If tests pass, the application is deployed to a staging environment for further testing.
+
+5. **Manual Approval**: A team member reviews the changes and approves deployment to production.
+
+6. **Deploy to Production**: The application is deployed to the production environment.
