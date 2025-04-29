@@ -138,3 +138,30 @@ By integrating a payment gateway, this feature handles payment collection, statu
 Lets guests leave ratings and feedback on properties after their stay.  
 This adds transparency and trust to the platform, helping future guests make informed decisions and encouraging hosts to maintain high-quality service.
 
+## API Security
+### 1. **User Authentication**  
+Secure authentication ensures that only verified users can access the platform. Passwords will be hashed using secure algorithms (like bcrypt), and login sessions will be managed via secure tokens (e.g., JWT). This protects user accounts from unauthorized access.
+
+### 2. **Role-Based Authorization**  
+The system will control access based on user roles — for example, only hosts can manage property listings, while only guests can make bookings. This prevents users from performing actions they’re not permitted to, protecting both data and application integrity.
+
+### 3. **Rate Limiting**  
+To protect against abuse and automated attacks, the API will implement rate limiting. This restricts the number of requests a user or IP can make within a given timeframe, reducing the risk of brute-force login attempts and denial-of-service attacks.
+
+### 4. **Input Validation and Sanitization**  
+Every piece of user input will be validated and sanitized to block malicious data, such as SQL injection or cross-site scripting (XSS). This protects both the server and the user interface from being compromised by bad input.
+
+### 5. **Secure Payment Handling**  
+Payments will be handled through trusted third-party providers like Stripe or PayPal, which take care of encryption, compliance, and fraud prevention. This ensures sensitive payment data never directly touches your backend, keeping transactions secure.
+
+### 6. **Encrypted Communication (HTTPS)**  
+All communication between the client and server will be encrypted using HTTPS and SSL/TLS. This keeps user data like passwords, booking info, and payment details secure from eavesdropping during transmission.
+
+### 7. **Database Security**  
+Access to the database will be tightly controlled using secure credentials and permission levels. Only the necessary parts of the system will have access to specific data, reducing the impact of potential breaches or leaks.
+
+### 8. **Secure Session Management**  
+Sessions will be protected with features like short expiration times, automatic logout, and token invalidation. This limits the risk of session hijacking or users staying logged in on public devices.
+
+### 9. **Activity Monitoring and Logging**  
+Key user actions (e.g., logins, property updates, payments) will be logged for auditing and troubleshooting. This allows you to detect suspicious behavior early and maintain a history of critical interactions.
