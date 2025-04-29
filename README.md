@@ -3,12 +3,7 @@
 The Airbnb Clone Project is a comprehensive, real-world application designed to simulate the development of a robust booking platform like Airbnb. It involves a deep dive into full-stack development, focusing on backend systems, database design, API development, and application security. This project enables learners to understand complex architectures, workflows, and collaborative team dynamics while building a scalable web application.
 
 ### Project Goals
-- **User Management**: Implement a secure system for user registration, authentication, and profile management.
-- **Property Management**: Develop features for property listing creation, updates, and retrieval.
-- **Booking System**: Create a booking mechanism for users to reserve properties and manage booking details.
-- **Payment Processing**: Integrate a payment system to handle transactions and record payment details.
-- **Review System**: Allow users to leave reviews and ratings for properties.
-- **Data Optimization**: Ensure efficient data retrieval and storage through database optimizations.
+> **User Management**, **Property Management**, **Booking System**, **Payment Processing**, **Review System**
 
 ### Tech Stack
 > Django, Django REST Framework, PostgreSQL, GraphQL, Celery, Redis, Docker, CI/CD Pipelines
@@ -115,4 +110,31 @@ Handles transaction records for bookings.
 **Relationships:**
 - A **Payment** is linked to one **Booking**.
 - A **Payment** indirectly relates to one **User** through the Booking.
+
+## Feature Breakdown
+Here’s a list of the **main features** from the Airbnb Clone Project, along with short descriptions of how each contributes to the overall platform:
+
+### 1. **User Management**
+Handles user registration, login, authentication, and profile settings.  
+This feature ensures that users can securely access the platform, manage their accounts, and distinguish between roles such as guest and host.
+
+
+### 2. **Property Management**
+Allows hosts to create, update, and delete property listings.  
+It enables the platform to showcase available accommodations, providing essential details like location, pricing, photos, and amenities to attract potential guests.
+
+
+### 3. **Booking System**
+Enables guests to reserve available properties and view their booking history.  
+This is the core functionality of the application, ensuring users can select dates, check availability, and complete the reservation process seamlessly.
+
+
+### 4. **Payment Processing**
+Facilitates secure transactions between guests and hosts.  
+By integrating a payment gateway, this feature handles payment collection, status tracking, and receipts, ensuring a smooth and trustworthy financial experience for both parties.
+
+
+### 5. **Review System**
+Lets guests leave ratings and feedback on properties after their stay.  
+This adds transparency and trust to the platform, helping future guests make informed decisions and encouraging hosts to maintain high-quality service.
 
